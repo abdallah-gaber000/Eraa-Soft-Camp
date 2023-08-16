@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>HTML form</h1>
+      <label>First name:</label><br />
+      <input type="text" />
+      <br /><br />
+      <label>Last name:</label><br />
+      <input type="text" />
+      <br /><br />
+      <label>E-mail:</label><br />
+      <input type="text" />
+      <br /><br />
+      <input type="radio" name="gender" value="Male" />
+      <label>Male</label>
+      <br />
+      <input type="radio" name="gender" value="Female" />
+      <label>Female</label>
+      <br /><br />
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </div>
+    <br />
+    <br />
+    <div>
+      <label for="">Username:</label><br />
+      <input type="text" /><br /><br />
+
+      <label for="">password:</label><br />
+      <input type="password" /><br /><br />
+
+      <label for="">City:</label><br />
+      <input type="text" /><br /><br />
+
+      <label for="">Last name:</label><br />
+      <input type="text" /><br /><br />
+
+      <label for="">Web server:</label><br />
+      <select>
+        <option value="volvo">Front</option>
+        <option value="saab">back</option>
+        <option value="opel">flutter</option></select
+      ><br /><br />
+
+      <label for="">please specfiy your role</label><br />
+
+      <input type="radio" id="Admin" value="Admin" name="specfiy" />
+      <label for="Admin">Admin</label><br />
+
+      <input type="radio" id="Engineer" value="Engineer" name="specfiy" />
+      <label for="Engineer">Engineer</label><br />
+
+      <input type="radio" id="Manager" value="Manager" name="specfiy" />
+      <label for="Manager">Manager</label><br />
+
+      <input type="radio" id="Guest" value="Guest" name="specfiy" />
+      <label for="Guest">Guest</label><br />
+
+      <label for="">single sign-on:</label><br />
+      <input type="checkbox" id="Mail" name="Mail" value="Mail" />
+      <label for="Mail"> Mail</label><br />
+
+      <input type="checkbox" id="payrol" name="payrol" value="payrol" />
+      <label for="payrol"> payrol</label><br />
+
+      <input
+        type="checkbox"
+        id="self-service"
+        name="self-service"
+        value="self-service"
+      />
+      <label for="self-service"> self-service</label><br />
+      <input type="submit" value="log in" />
+      <input type="reset" value="reset" />
+    </div>
+    <br />
+    <br />
+    <div>
+      <table cellpadding="20" border="1">
+        <caption>
+          <strong>Health Chart</strong>
+        </caption>
+        <tr>
+          <th rowspan="4">State of Health</th>
+          <th colspan="4">Fasting value</th>
+          <!-- <th>After Eating</th> -->
+        </tr>
+        <tr>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>2 hours after eating</th>
+        </tr>
+        <tr>
+          <th>Healthy</th>
+          <td>70</td>
+          <td>100</td>
+          <td>Less than 140</td>
+        </tr>
+        <tr>
+          <th>Pre-Diabetes</th>
+          <td>101</td>
+          <td>126</td>
+          <td>140 to 200</td>
+        </tr>
+        <tr>
+          <th>Diabetes</th>
+          <td>More than 126</td>
+          <td>N/A</td>
+          <td>More than 200</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

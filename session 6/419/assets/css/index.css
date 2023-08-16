@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 300vh;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+/* header {
+    background-color: red;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 10;
+} */
+/* nav {
+    background-color: #ececec;
+    padding: 1rem 0;
+    position: static;
+    width: 80%;
+    margin: auto;
+    top: 0;
+    z-index: 9;
+} */
+.parent {
+    width: 600px;
+    height: 700px;
+    background-color: black;
+    position: relative;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    
+}
+.child1 {
+    background: teal;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.child2 {
+    background: tomato;
+}
+.transform:hover {
+/* transform: skew(90deg); */
+/* transform-origin: right top; */
+/* transform-origin: bottom center; */
+}
+
+.transform {
+    width: 200px;
+    height: 200px;
+    background: red;
+    transition: 1s;
+}
+.pesoudo h1{
+    position: relative;
+}
+
+.pesoudo {
+    display: flex
+}
+
+.pesoudo h1::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.pesoudo h1::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    z-index: 1;
+    animation: identifier 1s infinite alternate;
+}
+
+@keyframes identifier {
+    0%{
+        left: 10px;
+    }
+    100%
+{
+    left: 20px;
+}}
+
+
+/* button {
+    position: relative;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    overflow: hidden;
+    transition: 1s;
+} */
+/* button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: teal;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    transition: 1s;
+    background: linear-gradient();
+} */
+button:hover {
+    color: #fff
+
+    
+}
+button:hover::after
+{
+left: 0;
+}
+
+
+.image {
+    width: 300px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.image::after {
+    content: "";
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(45deg , rgba(255,0,0,.7) , rgba(0,0,0,.7));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+}
+
+.image::before {
+    content: "";
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(45deg ,rgba(255,0,0,.7) ,rgba(0,0,0.7));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+}
+
+.image:hover::after {
+    transform: skew(-90deg);
+    transform-origin: top;
+}
+
+.image:hover::before{
+    transform: skew(-90deg);
+    transform-origin: bottom;
+}
+
+
+.test {
+    width: 400px;
+    height: 400px;
+    background: red;
+}
+
+
+/* @media  (max-width:768px) {
+    .test {
+        background: blue;
+    }
+}
+
+@media (max-width:425px) {
+    .test {
+        background: yellow;
+    }
+} */
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: #ececec;
+    padding: 15px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul {
+    display: flex;
+    gap: 30px;
+}
+.bar_icon {
+    display: none;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.item {
+    width: calc( (100% / 3) - 60px);
+    padding: 15px;
+    background-color: aqua;
+    border-radius: 16px;
+}
+
+
+.hero .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    flex-basis: 50%;
+}
+img {
+    width: 100%;
+}
+
+.hero__content h1 {
+    font-size: 50px;
+}
+.hero__content h5 {
+    font-size: 30px;
+    color: #5555;
+    margin: 20px 0;
+}
+.hero__btns {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.hero__getStart button {
+    padding: 10px 30px ;
+    border-radius: 20px;
+    background-color: aqua;
+    border: 0;
+}
+
+.hero {
+    padding: 20px 0;
+}
+
+@media (max-width:768px) {
+    .menu  {
+        display: none;
+    }
+    .bar_icon {
+        display: block;
+    }
+    .item {
+        width: 100%;
+    }
+    .col-6 {
+        flex-basis: 100%;
+    }
+   .col-6:nth-last-of-type(2 ){
+    order: 1;
+   }
+}

@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.containr {
+  min-height: 100vh;
+  background-image: url(/facade-residential-building.jpg);
+  background-size: cover;
+  padding-top: 100px;
+
+  /* background-attachment: fixed; */
+}
+/* section one  */
+.text {
+  color: white;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.text span {
+  font-size: x-large;
+}
+.text h1 {
+  font-size: 70px;
+  font-weight: 900;
+}
+.text a {
+  color: white;
+}
+/* section two */
+.first {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 40px 0;
+  border-radius: 10px;
+  background-color: white;
+  animation: 1s identifier infinite alternate;
+}
+@keyframes identifier {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+.text-input {
+  width: 30%;
+  height: 35px;
+  border-style: none;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+}
+.submit {
+  width: 15%;
+  height: 35px;
+  border-style: none;
+  border-radius: 20px;
+  color: white;
+  background-color: #f97e83;
+  text-transform: uppercase;
+}
+
+.service {
+  padding: 40px 0;
+}
+
+.service__images {
+  border: 1px solid green;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__item {
+  height: 130px;
+  /* width: 40%; */
+  width: 300px;
+
+  padding: 20px 20px;
+  background-color: #f97e83;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  color: white;
+}
+
+.time {
+  width: 40%;
+}
+.time-1 {
+  margin: auto;
+  width: 300px;
+  height: 120px;
+  padding: 20px 20px;
+  background-color: #f97e83;
+  border-radius: 10px;
+  color: white;
+  /* cursor: pointer; */
+}
+
+/* responsev */
+@media screen and (max-width: 1216px) {
+  .first {
+    width: 70%;
+  }
+  .service__images {
+    width: 70%;
+  }
+  .service__item {
+    width: 250px;
+  }
+  .time {
+    width: 53%;
+  }
+  .time-1 {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .first {
+    width: 80%;
+  }
+  .service__images {
+    width: 80%;
+  }
+  .service__item {
+    width: 250px;
+  }
+  .time {
+    width: 58%;
+  }
+  .time-1 {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 646px) {
+  .first {
+    width: 90%;
+  }
+  .service__images {
+    width: 90%;
+  }
+  .service__item {
+    width: 250px;
+  }
+  .time {
+    width: 55%;
+  }
+  .time-1 {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .first {
+    width: 90%;
+  }
+  .service__images {
+    width: 90%;
+    flex-direction: column;
+  }
+  .service__item {
+    width: 250px;
+    margin: auto;
+  }
+  .time {
+    width: 54%;
+  }
+  .time-1 {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .first {
+    width: 95%;
+  }
+  .service__images {
+    width: 95%;
+  }
+  .service__item {
+    width: 190px;
+  }
+  .time {
+    width: 55%;
+  }
+  .time-1 {
+    width: 190px;
+  }
+}
+
+/* session5 lectture */

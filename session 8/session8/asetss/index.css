@@ -1,0 +1,10 @@
+/* .container {
+  gap: 2px;
+} */
+.image:hover img {
+  transform: scale(1.2, 1.2);
+}
+
+.image img {
+  transition: 1s;
+}
