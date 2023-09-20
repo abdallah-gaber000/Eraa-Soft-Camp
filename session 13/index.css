@@ -1,0 +1,53 @@
+/* ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+li {
+  cursor: pointer;
+}
+
+.p2,
+.p3 {
+  display: none;
+} */
+/* button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+
+.show-div {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 50%;
+  border: 1px solid red;
+  border-radius: 10px;
+} */
+
+/* .one {
+  height: 20px;
+  background-color: blue;
+  border-radius: 10px;
+} */
+.paraint {
+  position: relative;
+  left: -110%;
+  /* z-index: 0; */
+  /* top: 0; */
+}
+.con {
+  background-color: rgb(90, 84, 84);
+  min-height: 100vh;
+
+  /* top: 0; */
+}
+.con_child {
+  width: 20%;
+  background-color: white;
+  min-height: 100vh;
+}

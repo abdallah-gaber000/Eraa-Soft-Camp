@@ -98,3 +98,9 @@
 // }
 // }
 // printString('addddddsfa')
+
+var arr = ["a", "b", "c", "a", "d"];
+// arr.slice(0);
+// arr.concat(0, 2);
+arr.sort();
+console.log(arr);
