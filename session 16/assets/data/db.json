@@ -1,0 +1,46 @@
+{
+	"posts": [
+		{
+			"id": 1,
+			"descrition": "efrgrgjrohqehilrhiqelqglbgrlqbhlibrg",
+			"onsail": false,
+			"price": 3000,
+			"newprice": null
+		},
+		{
+			"id": 2,
+			"descrition": "efrgrgjrohqehilrhiqelqglbgrlqbhlibrg",
+			"onsail": true,
+			"price": 4000,
+			"newprice": 2000
+		},
+		{
+			"id": 3,
+			"descrition": "efrgrgjrohqehilrhiqelqglbgrlqbhlibrg",
+			"onsail": true,
+			"price": 4500,
+			"newprice": 2500
+		},
+		{
+			"id": 4,
+			"descrition": "efrgrgjrohqehilrhiqelqglbgrlqbhlibrg",
+			"onsail": true,
+			"price": 5000,
+			"newprice": 3000
+		},
+		{
+			"id": 5,
+			"descrition": "efrgrgjrohqehilrhiqelqglbgrlqbhlibrg",
+			"onsail": false,
+			"price": 5500,
+			"newprice": null
+		},
+		{
+			"id": 6,
+			"descrition": "efrgrgjrohqehilrhiqelqglbgrlqbhlibrg",
+			"onsail": false,
+			"price": "6000$",
+			"newprice": null
+		}
+	]
+}
